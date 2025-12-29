@@ -12,3 +12,26 @@ Few of the FTDI pins are exposed to the FPGA chip. The exposed pins allow for 3 
 uv run apio upload # Upload the project to the icestick while ensuring dependencies are installed through UV
 uv run main.py # Communicate with the FPGA through the script
 ```
+
+## What Should You See?
+
+The script should output the following:
+```
+=== Testing Slave1 ===
+Echo
+Ping
+Pong
+
+=== Testing Slave2 ===
+Hello World!
+Hello World!
+Hello World!
+Hello World!
+Hello World!
+Hello World!
+Hello World!
+Hello Wor
+
+=== Testing Slave3 ===
+```
+Further, you should see a small light show from the icestick leds (done by Slave3). This showcases the functioning of the 3 spi slaves implemented within [top.sv](./top.sv) (`slave1`, `slave2` and `slave3`).
