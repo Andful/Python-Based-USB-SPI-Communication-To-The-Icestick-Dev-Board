@@ -1,0 +1,12 @@
+set_io clk      21
+set_io cs1       3
+set_io cs2       2
+set_io cs3       1
+set_io miso      7
+set_io mosi      8
+set_io sclk      9
+set_io leds[0]  95
+set_io leds[1]  96
+set_io leds[2]  97
+set_io leds[3]  98
+set_io leds[4]  99
