@@ -44,9 +44,6 @@ module slave3 (
   assign miso = 0;
   always_ff @(posedge clk) begin
     if (en) begin
-      if ( counter == 7 ) begin
-        leds <= data[4:0];
-      end
       if ( counter == 0 ) begin
         counter <= 7;
         leds <= {data, mosi};
